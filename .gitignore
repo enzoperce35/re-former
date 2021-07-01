@@ -44,3 +44,6 @@ schema.rb
 users.yml
 user_test.rb
 
+app/assets/stylesheets/users.scss
+app/helpers/users_helper.rb
+test/controllers/users_controller_test.rb
