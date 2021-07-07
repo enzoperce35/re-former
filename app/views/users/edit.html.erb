@@ -1,0 +1,12 @@
+<%= form_with url: user_path, method: 'patch' do |form| %>
+  <%= form.label :username, 'username:' %>
+  <%= form.text_field :username %>
+
+  <%= form.label :email, 'email:' %>
+  <%= form.email_field :email %>
+
+  <%= form.label :password, 'password:' %>
+  <%= form.text_field :password %>
+
+  <%= form.submit 'Edit' %>
+<% end %>
