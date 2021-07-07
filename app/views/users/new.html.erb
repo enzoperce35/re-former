@@ -9,6 +9,10 @@
   <input type="submit" value="Submit">
 </form> -->
 
+<% @user.errors.full_messages.each do |error| %>
+  <%= error %>
+<% end %>
+
 <%= form_tag users_path do %>
   <%= label_tag 'username', 'username:' %>
   <%= text_field_tag 'user[username]' %>
